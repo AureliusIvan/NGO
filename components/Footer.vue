@@ -6,12 +6,12 @@ const credit = json.credit;
 <template>
     <Content>
         <footer>
-            <div class="top">
+            <!-- <div class="top">
                 <div class="left">
                 </div>
                 <div class="right">
                 </div>
-            </div>
+            </div> -->
             <div class="bottom">
                 &copy; {{ credit.name }} | Managed by&nbsp;<a class="creator_link" :href="credit.link">@{{
                     credit.creator }}</a>
@@ -31,7 +31,6 @@ footer {
     width: 100%;
     background-color: var(--primary);
     color: #fff;
-    border: 1px solid red;
     padding: 10px;
 }
 
@@ -65,13 +64,16 @@ footer .top .right {
 }
 
 footer .bottom {
-    display: flex;
-    justify-content: center;
+
     align-items: center;
     text-align: center;
     width: 100%;
     height: 50%;
     color: rgb(0, 0, 0, 0.5);
+
+    @media screen and (max-width: 1000px) {
+        font-size: 12px;
+    }
 }
 
 .creator_link {

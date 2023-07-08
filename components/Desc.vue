@@ -17,11 +17,10 @@ const data = [
 <template>
     <div id="Desc">
         <Content>
-            <div>
-                <h1>Keunggulan Kami!</h1>
-                <div class="flex gap-5">
-                    <DescCard v-for="item in data" :title="item.title" :desc="item.desc" />
-                </div>
+
+            <h1>Keunggulan Kami!</h1>
+            <div id="Desc_content" class="flex gap-5">
+                <DescCard v-for="item in data" :title="item.title" :desc="item.desc" />
             </div>
         </Content>
     </div>
@@ -32,16 +31,29 @@ const data = [
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
     background-color: rgb(56, 72, 156);
     color: white;
 }
 
+
+#Desc_content {
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        gap: 10px;
+        margin-inline: 10px;
+    }
+}
+
 h1 {
-    font-size: 50px;
+    font-size: 70px;
+    margin-bottom: 2rem;
     font-weight: 700;
     text-align: center;
-    margin: 0;
-    padding: 0;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 30px;
+    }
 }
 </style>

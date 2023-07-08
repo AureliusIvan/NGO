@@ -32,7 +32,6 @@ const props = defineProps({
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: start;
     padding: 20px;
     height: inherit;
 }

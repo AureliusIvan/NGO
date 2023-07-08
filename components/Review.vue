@@ -22,7 +22,6 @@ const reviews = json.review;
 #Review {
     z-index: -1;
     position: relative;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +47,8 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    width: 100%;
+    height: 100%;
 
     @media screen and (max-width: 1000px) {
         flex-direction: column;

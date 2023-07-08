@@ -27,8 +27,7 @@ const props = defineProps({
     margin-inline: 10px;
     background-color: white;
     width: 100%;
-    height: 100%;
-    min-height: fit-content;
+    height: inherit;
     border-radius: 10px;
     color: black;
     padding-block: 10px;
