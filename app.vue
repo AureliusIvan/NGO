@@ -8,13 +8,13 @@
 
 <script setup>
 useHead({
-  title: 'My App',
+  title: 'Cendana Motor',
   meta: [
-    { name: 'description', content: 'My amazing site.' }
+    { name: 'description', content: 'Cendana Motor.' }
   ],
   bodyAttrs: {
     class: 'test'
   },
-  script: [{ innerHTML: 'console.log(\'Hello world\')' }]
+  // script: [{ innerHTML: 'console.log(\'Hello world\')' }]
 })
 </script>

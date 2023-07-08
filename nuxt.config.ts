@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   alias: {
     '@': resolve(__dirname, './')
   },
-  css: ["~/assets/main.scss"],
+  css: ["~/assets/main.css"],
   devtools: { enabled: true },
   postcss: {
     plugins: {
