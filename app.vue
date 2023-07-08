@@ -10,7 +10,9 @@
 useHead({
   title: 'Cendana Motor',
   meta: [
-    { name: 'description', content: 'Cendana Motor.' }
+    { name: 'description', content: 'Cendana Motor.' },
+    // <meta name="google-site-verification" content="iyly3wk2prm0hRXMjHMiR1Ok8Ow1gUXWyZX8v9Hrft8" />
+    { name: 'google-site-verification', content: 'iyly3wk2prm0hRXMjHMiR1Ok8Ow1gUXWyZX8v9Hrft8' }
   ],
   bodyAttrs: {
     class: 'test'
