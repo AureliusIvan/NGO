@@ -4,7 +4,7 @@ const props = defineProps({
         type: String,
         required: true,
     },
-    src: {
+    icon: {
         type: String,
         // required: true,
     },
@@ -13,12 +13,14 @@ const props = defineProps({
         // required: true,
     }
 });
+
+
 </script>
 
 <template>
     <a class="container" :href=href>
         <div>
-            <img :src="src">
+            <img :src="icon" alt="icon" />
         </div>
         <div>
             <h1>{{ name }}</h1>
@@ -39,13 +41,23 @@ const props = defineProps({
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: 100%;
+    transition: 0.3s;
+
+    @media screen and (max-width: 1000px) {
+        width: calc(40% - 20px);
+    }
+}
+
+.container:hover {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 
 h1 {
-    font-size: 10px;
+    font-size: 70%;
     font-weight: 700;
     text-align: center;
     margin: 0;
@@ -54,7 +66,12 @@ h1 {
 }
 
 img {
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+i {
+    font-size: 40px;
+    color: rgb(79, 79, 79);
 }
 </style>

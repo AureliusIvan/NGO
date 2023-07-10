@@ -3,7 +3,7 @@
     "review": [
         {
             "name": "Ali",
-            "content": "Pertama kali kebengkel! kokohnya Enak diajak bicaranya, mekaniknya juga TOP ..emang inih yg dibutuhkan kita-kita orang 😄"
+            "content": "Pertama kali kebengkel! kokohnya Enak diajak bicaranya, mekaniknya juga TOP. Emang inih yg dibutuhkan kita-kita orang 😄"
         },
         {
             "name": "Stefan",
@@ -22,15 +22,28 @@
     "socialmedia": [
         {
             "name": "Instagram",
-            "link": "https://www.instagram.com/cendanamotor/"
+            "link": "https://www.instagram.com/cendanamotor/",
+            "icon": "@/assets/image/instagram.svg"
         },
         {
             "name": "Facebook",
-            "link": "https://www.facebook.com/cendanamotor/"
+            "link": "https://www.facebook.com/cendanamotor/",
+            "icon": "@/assets/image/facebook.svg"
         },
         {
             "name": "Whatsapp",
-            "link": "https://wa.me/6281280000000"
+            "link": "https://wa.me/6281280000000",
+            "icon": "@/assets/image/whatsapp.svg"
+        },
+        {
+            "name": "Google",
+            "link": "https://wa.me/6281280000000",
+            "icon": "@/assets/image/google.svg"
+        },
+        {
+            "name": "Maps",
+            "link": "https://wa.me/6281280000000",
+            "icon": "@/assets/image/google-maps.svg"
         }
     ]
 }
