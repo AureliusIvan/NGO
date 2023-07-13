@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import Image2 from '../assets/image/content_berpengalmaan.png'
+
+
+const date = new Date();
+const tahunberdiri = 2007;
+const year = date.getFullYear();
+const umur = year - tahunberdiri;
 </script>
 <template>
     <div id="Desc">
@@ -34,8 +40,8 @@ import Image2 from '../assets/image/content_berpengalmaan.png'
                 </svg>
             </div>
             <div class="paragraf_content">
-                <h2 class="text-black align-right"> Berpengalaman lebih dari 15 tahun</h2>
-                <p class="align-right"> Dengan pengalaman selama lebih dari 15 tahun
+                <h2 class="text-black align-right"> Berpengalaman lebih dari {{ umur }} tahun</h2>
+                <p class="align-right"> Dengan pengalaman selama lebih dari {{ umur }} tahun
                     dalam industri ini, kami telah memperoleh
                     pengetahuan dan keterampilan yang
                     mendalam dalam perbaikan kendaraan.

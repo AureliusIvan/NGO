@@ -11,7 +11,7 @@ import Image from "@/assets/image/carousel1.png"
                 <p>
                     kami mengutamakan perbaikan
                     kendaraan terbaik yang sesuai dengan
-                    kebutuhan Anda.
+                    kebutuhan Anda dan tentunya kepuasan pelanggan!
                 </p>
             </div>
         </div>
@@ -44,7 +44,7 @@ import Image from "@/assets/image/carousel1.png"
         justify-content: center;
         align-items: center;
         $left_size : 45%;
-        padding-inline: 5%;
+        padding-inline: 10%;
         width: $left_size;
         height: 100%;
         background-color: #274DA0;
@@ -58,8 +58,9 @@ import Image from "@/assets/image/carousel1.png"
             flex-direction: column;
             justify-content: center;
             padding-left: 10%;
-            left: 0%;
+            left: 10%;
             z-index: 2;
+
 
             h1 {
                 color: #FFF;

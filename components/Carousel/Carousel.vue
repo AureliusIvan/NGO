@@ -28,7 +28,7 @@ export default {
   
 
 <template>
-    <div id="home"> 
+    <div id="home">
         <swiper :spaceBetween="30" :centeredSlides="true" :autoplay="{
             delay: 2500,
             disableOnInteraction: false,
@@ -36,14 +36,14 @@ export default {
     clickable: true,
 }" :navigation="true" :modules="modules" class="mySwiper">
             <!-- <swiper-slide v-for="item in 3" class="slide">
-            <img class="Image" src="https://picsum.photos/200/301" />
-        </swiper-slide> -->
-            <!-- <swiper-slide class="slide">
-            <CarouselContentOne />
-        </swiper-slide>
-        <swiper-slide class="slide">
-            <CarouselContentTwo />
-        </swiper-slide> -->
+                <img class="Image" src="https://picsum.photos/200/301" />
+            </swiper-slide> -->
+            <swiper-slide class="slide">
+                <CarouselContentOne />
+            </swiper-slide>
+            <swiper-slide class="slide">
+                <CarouselContentTwo />
+            </swiper-slide>
             <swiper-slide class="slide">
                 <CarouselContentThree />
             </swiper-slide>
@@ -70,4 +70,3 @@ export default {
 
 }
 </style>
-

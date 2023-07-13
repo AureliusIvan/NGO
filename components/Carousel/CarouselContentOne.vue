@@ -34,7 +34,7 @@ import Image from "@/assets/image/carousel1.png"
         justify-content: center;
         align-items: center;
         $left_size : 60%;
-        padding-inline: 5%;
+        padding-inline: 10%;
         width: $left_size;
         height: 100%;
         background-color: #274DA0;

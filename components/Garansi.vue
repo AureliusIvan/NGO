@@ -22,7 +22,7 @@
         </div>
         <div class="content">
             <h1>Garansi jika ada kerusakan setelah perbaikan</h1>
-            <p>Kami sangat percaya pada kualitas kerja kami. Oleh karena itu,
+            <p>Kami sangat percaya pada kualitas kerja &amp; sparepart original yang kami sediakan. Oleh karena itu,
                 setiap perbaikan kendaraan di Cendana Motor Graha Raya
                 dilengkapi dengan garansi. Jika ada kerusakan setelah perbaikan,
                 Anda dapat mengandalkan kami untuk memperbaikinya

@@ -12,7 +12,7 @@ const credit = json.credit;
     </footer>
 </template>
 
-<style>
+<style scoped lang="scss">
 footer {
     display: flex;
     flex-direction: column;
@@ -24,58 +24,30 @@ footer {
     background-color: var(--primary);
     color: #fff;
     padding: 10px;
-}
 
-footer .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-}
+    .bottom {
 
-footer .top .left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-}
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+        color: rgb(0, 0, 0, 0.5);
 
-footer .top .left img {
-    width: 50px;
-    height: 50px;
-}
+        @media screen and (max-width: 1000px) {
+            font-size: 12px;
+        }
 
-footer .top .right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-}
+        .creator_link {
+            color: rgb(41, 0, 41);
+            text-decoration: none;
+            font-weight: bold;
 
-footer .bottom {
+            &:hover {
+                color: rgb(192, 140, 192);
+                text-decoration: underline;
+            }
+        }
 
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 50%;
-    color: rgb(0, 0, 0, 0.5);
-
-    @media screen and (max-width: 1000px) {
-        font-size: 12px;
     }
-}
-
-.creator_link {
-    color: rgb(41, 0, 41);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.creator_link:hover {
-    color: rgb(192, 140, 192);
-    text-decoration: underline;
 }
 </style>
