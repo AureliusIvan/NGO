@@ -165,6 +165,7 @@ h1 {
         height: 100%;
         width: 40%;
         object-fit: cover;
+        z-index: -1;
     }
 }
 

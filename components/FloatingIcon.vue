@@ -2,9 +2,9 @@
 </script>
 
 <template>
-    <div id="FloatingIcon">
+    <a id="FloatingIcon" target="_blank" href="https://wa.me/6281513701070">
         <img src="../assets/image/whatsapp.svg" alt="whatsapp" />
-    </div>
+    </a>
 </template>
 
 
@@ -21,6 +21,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 8;
+    pointer-events: all;
+    cursor: pointer;
 }
 
 #FloatingIcon:hover {
