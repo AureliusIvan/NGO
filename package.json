@@ -19,11 +19,13 @@
   },
   "dependencies": {
     "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/style-resources": "^1.2.1",
     "@vueuse/core": "^10.2.1",
     "axios": "^1.4.0",
     "fontawesome-free": "^1.0.4",
     "googleapis": "^120.0.0",
     "sass": "^1.63.6",
-    "swiper": "^10.0.3"
+    "swiper": "^10.0.3",
+    "vue-scrollto": "^2.20.0"
   }
 }

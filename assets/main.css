@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,8 +8,8 @@
 
 
 :root {
-    --primary: #ffffff;
-    --secondary: #2b2b2b;
+    --primary: rgba(214, 222, 241, 1);
+    --secondary: #274DA0;
     --accent: #0c65ad;
 
     /* size */

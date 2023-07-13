@@ -5,11 +5,15 @@ export default defineNuxtConfig({
   // modules: [
   //   '@nuxtjs/eslint-module',
   // ],
+
   alias: {
     '@': resolve(__dirname, './')
   },
   css: ["~/assets/main.css"],
   devtools: { enabled: true },
+  buildModules: [
+    '@nuxtjs/style-resources',
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -21,5 +25,6 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     }
-  }
+  },
+
 })

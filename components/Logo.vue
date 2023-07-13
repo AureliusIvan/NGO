@@ -15,10 +15,10 @@ const props = defineProps({
             "Cendana Motor Graha Raya" : ""
         }}</span> -->
     </span>
-    <span class="logo_name">{{
+    <!-- <span class="logo_name">{{
         isDesktop ?
         "Cendana Motor Graha Raya" : ""
-    }}</span>
+    }}</span> -->
 </template>
 
 

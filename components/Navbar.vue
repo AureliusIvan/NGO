@@ -21,12 +21,26 @@ const path = computed(() => {
 
             </div>
         </div>
-        <Content>
-            <div id="navbar_content" class="flex justify-between align-middle">
-                <Logo :isDesktop="isDesktop" />
-                <NuxtLink class="Kontak" :to="path">{{ route.path === '/' ? 'contact' : 'home' }}</NuxtLink>
+
+        <div id="navbar_content" class="flex justify-between align-middle">
+            <Logo :isDesktop="isDesktop" />
+            <div class="Menu">
+                <NuxtLink to="#home" class="MenuLink" active-class="active" exact>
+                    <!-- <a v-scroll-to="'#garansi'"> -->
+                    <div class="MenuLinkText">Tentang kami</div>
+                    <!-- </a> -->
+                </NuxtLink>
+                <NuxtLink to="#keunggulan" class="MenuLink" active-class="active" exact>
+                    <div class="MenuLinkText">Keunggulan</div>
+                </NuxtLink>
+                <NuxtLink to="#review" class="MenuLink" active-class="active" exact>
+                    <div class="MenuLinkText">Testimoni</div>
+                </NuxtLink>
+                <NuxtLink to="#kontak" class="MenuLink" active-class="active" exact>
+                    <div class="MenuLinkText">Kontak</div>
+                </NuxtLink>
             </div>
-        </Content>
+        </div>
     </nav>
 </template>
 
@@ -44,6 +58,8 @@ const path = computed(() => {
     background-color: var(--primary);
     color: black;
     box-shadow: 0px 4px 5px 3px rgb(0, 0, 0, 0.1);
+    z-index: 3;
+    padding-inline: 10%;
 }
 
 #navbar_content {
@@ -77,5 +93,31 @@ const path = computed(() => {
 .Kontak:hover {
     background-color: rgb(110, 110, 110);
     color: white;
+}
+
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.MenuLinkText {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary);
+    transition: all 0.2s ease-in-out;
+    padding: 5px;
+}
+
+.MenuLinkText:hover {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary);
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(110, 110, 110, 0.2);
+    border-radius: 10px;
 }
 </style>

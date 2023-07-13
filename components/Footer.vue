@@ -4,20 +4,12 @@ const credit = json.credit;
 </script>
 
 <template>
-    <Content>
-        <footer>
-            <!-- <div class="top">
-                <div class="left">
-                </div>
-                <div class="right">
-                </div>
-            </div> -->
-            <div class="bottom">
-                &copy; {{ credit.name }} | Managed by&nbsp;<a class="creator_link" :href="credit.link">@{{
-                    credit.creator }}</a>
-            </div>
-        </footer>
-    </Content>
+    <footer>
+        <div class="bottom">
+            &copy; {{ credit.name }} | Managed by&nbsp;<a class="creator_link" :href="credit.link">@{{
+                credit.creator }}</a>
+        </div>
+    </footer>
 </template>
 
 <style>

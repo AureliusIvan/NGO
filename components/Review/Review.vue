@@ -6,7 +6,7 @@ const reviews = json.review;
 
 
 <template>
-    <div id="Review">
+    <section id="review">
         <Content>
             <h1>Apa kata <br>
                 Customer kami?</h1>
@@ -14,12 +14,12 @@ const reviews = json.review;
                 <ReviewCard v-for="(item, index) in reviews" :key="index" :name="item.name" :review="item.content" />
             </div>
         </Content>
-    </div>
+    </section>
 </template>
 
 
-<style scoped>
-#Review {
+<style scoped lang="scss">
+#review {
     z-index: -1;
     position: relative;
     display: flex;
@@ -28,32 +28,33 @@ const reviews = json.review;
     height: fit-content;
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(49, 14, 79);
+    background-color: #274DA0;
     color: white;
-}
 
-h1 {
-    font-size: 70px;
-    margin-bottom: 2rem;
-    font-weight: 700;
-    text-align: center;
 
-    @media screen and (max-width: 1000px) {
-        font-size: 30px;
+    h1 {
+        font-size: 70px;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        text-align: center;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 30px;
+        }
     }
-}
 
-.list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
 
-    @media screen and (max-width: 1000px) {
-        flex-direction: column;
-        gap: 10px;
-        margin-inline: 10px;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            gap: 10px;
+            margin-inline: 10px;
+        }
     }
 }
 </style>
