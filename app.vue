@@ -8,7 +8,7 @@
 
 <script setup>
 useHead({
-  title: 'Cendana Motor Graha Raya',
+  title: 'NGO',
   meta: [
     { name: 'description', content: 'Bengkel Cendana Motor Graha Raya adalah bengkel yang melayani perbaikan sepeda motor dari berbagai merk dan juga pembelian sparepart original seperti honda dan yamaha' },
     { name: 'google-site-verification', content: 'iyly3wk2prm0hRXMjHMiR1Ok8Ow1gUXWyZX8v9Hrft8' },
