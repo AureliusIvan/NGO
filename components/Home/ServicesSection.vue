@@ -39,6 +39,10 @@ import Image from "@/assets/image/HeroSection.webp";
         width: $left-width;
         display: flex;
         flex-direction: column;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     .right {
@@ -50,6 +54,11 @@ import Image from "@/assets/image/HeroSection.webp";
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            display: none;
         }
     }
 }

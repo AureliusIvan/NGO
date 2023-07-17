@@ -34,14 +34,14 @@ const computedHasOffsetHeight = computed(() => hasOffsetHeight.value);
             <NuxtLink to="/" class="icon text-gray-700 text-base font-normal"
                 :class="computedHasOffsetHeight === true ? 'active' : ''">Home
             </NuxtLink>
-            <NuxtLink to="/about" class="icon text-gray-700 text-base font-normal"
+            <!-- <NuxtLink to="/about" class="icon text-gray-700 text-base font-normal"
                 :class="computedHasOffsetHeight === true ? 'active' : ''">About us</NuxtLink>
             <NuxtLink to="/whatwedo" class="icon text-gray-700 text-base font-normal"
                 :class="computedHasOffsetHeight === true ? 'active' : ''">What We Do</NuxtLink>
             <NuxtLink to="/media" class="icon text-gray-700 text-base font-normal"
                 :class="computedHasOffsetHeight === true ? 'active' : ''">Media</NuxtLink>
             <NuxtLink to="/contact" class="icon text-gray-700 text-base font-normal"
-                :class="computedHasOffsetHeight === true ? 'active' : ''">Contact</NuxtLink>
+                :class="computedHasOffsetHeight === true ? 'active' : ''">Contact</NuxtLink> -->
         </div>
         <NuxtLink to="/donate" id="donate" class="px-8 py-3 bg-teal-800 rounded justify-start items-start gap-2.5 flex">
             <div class="text-right text-white text-base font-bold">Donate</div>

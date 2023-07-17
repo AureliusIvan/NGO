@@ -30,7 +30,6 @@ import Image from "@/assets/image/HeroSection.webp";
     $width: 100%;
     width: $width;
     height: fit-content;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

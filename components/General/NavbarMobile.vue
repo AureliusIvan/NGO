@@ -38,14 +38,14 @@ function toogleOpen() {
             <NuxtLink @click="toogleOpen" to="/" class="icon text-gray-700 text-base font-normal"
                 :class="route === '/' ? 'active' : ''">Home
             </NuxtLink>
-            <NuxtLink @click="toogleOpen" to="/about" class="icon text-gray-700 text-base font-normal"
+            <!-- <NuxtLink @click="toogleOpen" to="/about" class="icon text-gray-700 text-base font-normal"
                 :class="route === 'about' ? 'active' : ''">About us</NuxtLink>
             <NuxtLink @click="toogleOpen" to="/whatwedo" class="icon text-gray-700 text-base font-normal"
                 :class="route === 'whatwedo' ? 'active' : ''">What We Do</NuxtLink>
             <NuxtLink @click="toogleOpen" to="/media" class="icon text-gray-700 text-base font-normal"
                 :class="route === 'media' ? 'active' : ''">Media</NuxtLink>
             <NuxtLink @click="toogleOpen" to="/contact" class="icon text-gray-700 text-base font-normal"
-                :class="route === 'contact' ? 'active' : ''">Contact</NuxtLink>
+                :class="route === 'contact' ? 'active' : ''">Contact</NuxtLink> -->
             <NuxtLink @click="toogleOpen" id="donate" to="/donate"
                 class="px-8 py-3 bg-teal-800 rounded justify-start items-start gap-2.5 flex">
                 <div class="text-right text-white text-base font-bold">Donate</div>

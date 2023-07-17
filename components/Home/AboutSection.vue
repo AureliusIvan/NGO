@@ -68,6 +68,7 @@ function toggleOpen() {
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
+        min-height: fit-content;
     }
 
 
