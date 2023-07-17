@@ -1,8 +1,8 @@
 <template>
     <div class="Layout">
-        <Navbar />
+        <GeneralNavbar />
         <slot />
-        <Footer />
+        <GeneralFooter />
     </div>
 </template>
 
@@ -10,5 +10,6 @@
 <style scoped>
 .Layout {
     position: relative;
+    overflow-x: hidden;
 }
 </style>
