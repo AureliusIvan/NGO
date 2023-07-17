@@ -53,7 +53,8 @@ import Image from "@/assets/image/HeroSection.webp"
 <style lang="scss" scoped>
 #HeroSection {
     width: 100%;
-    height: calc(100vh);
+    height: fit-content;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -63,6 +64,7 @@ import Image from "@/assets/image/HeroSection.webp"
 
     @media screen and (max-width: 1000px) {
         margin-top: 71px;
+        min-height: fit-content;
     }
 
     #HeroImage {
@@ -71,6 +73,17 @@ import Image from "@/assets/image/HeroSection.webp"
         top: 0;
         left: 0;
         z-index: -1;
+        animation: 15s ease-in-out 0s infinite zoom alternate;
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(2) translate(10px, 20px);
+            }
+        }
     }
 
 
@@ -125,6 +138,10 @@ import Image from "@/assets/image/HeroSection.webp"
                     cursor: pointer;
                     background-color: rgba(255, 255, 255, 0.2);
                 }
+
+                @media screen and (max-width: 1000px) {
+                    margin-block: 20px;
+                }
             }
 
             #CTA_play_video {
@@ -161,7 +178,15 @@ import Image from "@/assets/image/HeroSection.webp"
                 width: 50%;
                 border: 1px solid var(--bg-color, #E8EBF0);
             }
+
+            @media screen and (max-width: 768px) {
+                position: relative;
+                flex-direction: column;
+                gap: 1rem;
+                bottom: 5%;
+            }
         }
+
     }
 
 }

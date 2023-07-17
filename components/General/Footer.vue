@@ -35,7 +35,7 @@
             </h2>
             <div id="news_letter">
                 <input type="text" placeholder="Your Email" />
-                <button>Subscribe</button>
+                <button class="Subscribe_cta">Subscribe</button>
             </div>
         </div>
     </div>
@@ -54,8 +54,10 @@
     align-items: center;
     padding: 5%;
 
-    @media screen and (max-width: 1000) {
+    @media screen and (max-width: 1000px) {
         flex-direction: column;
+        min-height: fit-content;
+        gap: 10px;
     }
 
 
@@ -79,12 +81,26 @@
         align-items: center;
         width: max-content;
 
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
         .item_list {
             display: flex;
             flex-direction: column;
             gap: 1rem;
             text-align: left;
             width: max-content;
+
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
 
             .item {
                 color: #FFF;
@@ -108,6 +124,14 @@
         display: flex;
         flex-direction: column;
 
+        @media screen and (max-width: 1000px) {
+            padding-block: 20px;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
         h2 {
             color: var(--bg-color, #E8EBF0);
             font-family: Nunito Sans;
@@ -118,6 +142,13 @@
             width: 50%;
             margin-bottom: 30px;
             /* 2.8rem */
+
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
         }
 
         #news_letter {
@@ -154,6 +185,11 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }

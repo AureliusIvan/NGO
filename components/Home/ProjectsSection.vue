@@ -1,10 +1,10 @@
 <template>
     <div id="Project">
         <HomeComponentsTextWithLine>PROJECTS WE HAVE DONE</HomeComponentsTextWithLine>
-        <HomeComponentsParagraf titleSize="40%" title="We are all about creating a place where girls can thrive">
+        <HomeComponentsParagraf titleSize="100%" title="We are all about creating a place where girls can thrive">
         </HomeComponentsParagraf>
         <div id="list">
-            <HomeComponentsProjectCard title="Mission smile 1k: Outdoor charity" v-for="i in 3">
+            <HomeComponentsProjectCard title="Mission smile 1k: Outdoor charity" v-for="i in 1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
             </HomeComponentsProjectCard>
         </div>
